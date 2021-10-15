@@ -20,7 +20,7 @@ public class Aluno {
     private ArrayList<Integer> idNotas;
 
     public boolean autenticar(int matricula, String senha) {
-        if (this.matricula == matricula && this.senha == senha) {
+        if (this.matricula == matricula && this.senha.equals(senha)) {
             return true;
         }
         return false;
